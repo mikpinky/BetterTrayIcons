@@ -1,5 +1,101 @@
 # Changelog
 
+## [4.0.0](https://github.com/mikpinky/BetterTrayIcons/compare/v3.3.3...v4.0.0) (2026-10-15)
+
+
+### ⚠ BREAKING CHANGES
+
+* **tray:** the tray detection core was reworked, so apps can be re-identified under new keys and settings synced from an older version may not apply cleanly. To be safe after updating, reset all settings and clear the backups under General so no stale or broken data is carried over.
+* version bump to align with EGO submission
+
+### Features
+
+* **actions:** touch gestures and scroll to cycle icons ([20511cb](https://github.com/mikpinky/BetterTrayIcons/commit/20511cbeb06498e54ec7a5f652140ef46e89dfcb)), closes [#30](https://github.com/mikpinky/BetterTrayIcons/issues/30)
+* align versioning with EGO submission ([bc7ab77](https://github.com/mikpinky/BetterTrayIcons/commit/bc7ab775e16be963507d6bc1f00dd749f40bae33))
+* **api:** join Better Panel as a tray applet ([7c52b37](https://github.com/mikpinky/BetterTrayIcons/commit/7c52b37475a69f2618110f97fb369c946475804c))
+* **api:** place applets from other extensions in the tray ([0a1d2bd](https://github.com/mikpinky/BetterTrayIcons/commit/0a1d2bdf8b6bc21cfc4556c35f9da6b01136fb34))
+* **appearance:** separate light and dark color sets per surface ([5a20448](https://github.com/mikpinky/BetterTrayIcons/commit/5a20448d502c3b60d4c650a13f16bb16cb04256a)), closes [#56](https://github.com/mikpinky/BetterTrayIcons/issues/56)
+* bundle the extension's own icon theme ([2aba319](https://github.com/mikpinky/BetterTrayIcons/commit/2aba319dfe1ff58a73db73bf6a8ea01f7d782396))
+* **dnd:** rework icon reordering around live slides ([580a499](https://github.com/mikpinky/BetterTrayIcons/commit/580a499a48cf145df5b08bbeb43a9916c05b9bec))
+* **i18n:** add Russian translation ([2ad6f33](https://github.com/mikpinky/BetterTrayIcons/commit/2ad6f33b092e12c23f1ae9565b439f1ef6dcd430))
+* Initial release of Better Tray Icons ([1ac8ebe](https://github.com/mikpinky/BetterTrayIcons/commit/1ac8ebebc645b3080c53ae67bd54cf3eb3f8e062))
+* pass scroll to the app, fix menu contrast, flyout and toggle ([fe7febe](https://github.com/mikpinky/BetterTrayIcons/commit/fe7febe88d4f024fb23db6c8ac1e357b45dc0f2a)), closes [#71](https://github.com/mikpinky/BetterTrayIcons/issues/71)
+* **popup:** keep the overflow menu open through context menus ([22f60e6](https://github.com/mikpinky/BetterTrayIcons/commit/22f60e63c693b3347087bdf87352ebfaa7ea6163)), closes [#49](https://github.com/mikpinky/BetterTrayIcons/issues/49)
+* **prefs:** placement cards and a preview stage with measuring guides ([b1f0257](https://github.com/mikpinky/BetterTrayIcons/commit/b1f02577753e1711add7b6365a97fc60e7594348))
+* **prefs:** sidebar redesign, live previews and cross-device merge ([470a996](https://github.com/mikpinky/BetterTrayIcons/commit/470a9965f79f14777b11f5660f14a8ea7fe73764))
+* **proxy:** desktop actions, status line and quit for background apps ([a7c817f](https://github.com/mikpinky/BetterTrayIcons/commit/a7c817f9f7828152b03fb48878ec6d9d7c4a9645)), closes [#55](https://github.com/mikpinky/BetterTrayIcons/issues/55)
+* **shell:** hide background apps and proxy icons for windowless apps ([fff0954](https://github.com/mikpinky/BetterTrayIcons/commit/fff09545ad6d0b307435ec9c0336046f297a0469))
+* **style:** border color and width for icons, toggle and popup ([b814f20](https://github.com/mikpinky/BetterTrayIcons/commit/b814f201b4972d5d6bfec6fa0234609f77ad597a))
+* support gnome shell 51 ([0a93036](https://github.com/mikpinky/BetterTrayIcons/commit/0a930362e50b7085cd23f99aa80f4a5fb3a582f0))
+* **toggle:** rotate or swap the icon while the popup is open ([8a532df](https://github.com/mikpinky/BetterTrayIcons/commit/8a532df4249b06c28aadd71cdfdfa6e0ca07de4f)), closes [#54](https://github.com/mikpinky/BetterTrayIcons/issues/54)
+* **tray:** add hover tooltips to xembed icons ([7f67c93](https://github.com/mikpinky/BetterTrayIcons/commit/7f67c9327a97ac24f4909335b50df85c6dadda91))
+* **tray:** let a setting choose which menu opens on toggle hover ([6602996](https://github.com/mikpinky/BetterTrayIcons/commit/6602996d66730c5048c3d163263fe64364273746)), closes [#22](https://github.com/mikpinky/BetterTrayIcons/issues/22)
+* **tray:** let selected colors follow the system accent ([558a8e8](https://github.com/mikpinky/BetterTrayIcons/commit/558a8e8414c16a96d53df1beb949f502b9eca7e6)), closes [#20](https://github.com/mikpinky/BetterTrayIcons/issues/20)
+* **tray:** per-item identity, packaging split and status badges ([1e52b35](https://github.com/mikpinky/BetterTrayIcons/commit/1e52b359ac9a25ee93f17c3baed9bd65879bc7d3))
+
+
+### Bug Fixes
+
+* **about:** correct the show-more card icon name ([3e4bcfb](https://github.com/mikpinky/BetterTrayIcons/commit/3e4bcfb8781de5aff1e970af03cc78bc17980adf))
+* **about:** lowercase the contributor opt-out entry ([3f7d41a](https://github.com/mikpinky/BetterTrayIcons/commit/3f7d41acde0e75be42f3af38c9b43189211b63cc))
+* **build:** ship the compiled gsettings schema in the release asset ([5263b55](https://github.com/mikpinky/BetterTrayIcons/commit/5263b55db867f618be4f9217e80771d099341e39)), closes [#12](https://github.com/mikpinky/BetterTrayIcons/issues/12)
+* clean up after a failed enable instead of only logging it ([f3239e3](https://github.com/mikpinky/BetterTrayIcons/commit/f3239e3b4bddb687fe5b5a8d6ba222dea0f148e7))
+* convert /proc and Steam manifest reads to async file IO ([a33f316](https://github.com/mikpinky/BetterTrayIcons/commit/a33f31650b1f20623cb9c6ff522569fca5b028f4))
+* keep overflow popup open when tray icon updates ([8a62426](https://github.com/mikpinky/BetterTrayIcons/commit/8a6242603c8d56f32dbfa1a4642091178e87acdc))
+* make tray menus discoverable by Blur My Shell ([#78](https://github.com/mikpinky/BetterTrayIcons/issues/78)) ([49a113b](https://github.com/mikpinky/BetterTrayIcons/commit/49a113b5dd11f76497565a5a1822a4c6bf09256b))
+* **menu:** close the gap over a bottom bar ([0b0495f](https://github.com/mikpinky/BetterTrayIcons/commit/0b0495f264e58c2e815b9cc397b8796cc74bbe0f))
+* **menu:** open dbusmenu submenus at any depth ([381dba2](https://github.com/mikpinky/BetterTrayIcons/commit/381dba24eb23acd5bed736a9784ed68e1d6182e7))
+* **menu:** pop a submenu out beside its item when it has no room ([e9ff943](https://github.com/mikpinky/BetterTrayIcons/commit/e9ff943b76dc1fd3fbe8668b3b6073ea62ecc40c))
+* **menu:** render icon-data, lazy submenus and the collapse look ([696d415](https://github.com/mikpinky/BetterTrayIcons/commit/696d415dca38cc1003a2295f41e6c0d3c27de6cf))
+* **prefs:** correct button alignment styling ([d18d01f](https://github.com/mikpinky/BetterTrayIcons/commit/d18d01f8e4641135f745c2755d2fcc5fd0146acf))
+* **prefs:** ship the svg assets the about page renders ([11f89d1](https://github.com/mikpinky/BetterTrayIcons/commit/11f89d1273909d17192357f57fab181a619b5f4d))
+* **prefs:** show contributors missing from github's cached list ([361153b](https://github.com/mikpinky/BetterTrayIcons/commit/361153b75bf9576c2b9798e122fcfee4f5f8af29))
+* **prefs:** show the close button when window buttons sit on the left ([#79](https://github.com/mikpinky/BetterTrayIcons/issues/79)) ([7d9a850](https://github.com/mikpinky/BetterTrayIcons/commit/7d9a8509803c6827c7bb44ce0be77c917476e29e)), closes [#77](https://github.com/mikpinky/BetterTrayIcons/issues/77)
+* **prefs:** stop scoped handlers from leaking their widget ([bb3d17f](https://github.com/mikpinky/BetterTrayIcons/commit/bb3d17f022ca256e081b5834ad5f698c5b7b76f5))
+* prevent signal leak and use async file IO ([4a9fcf6](https://github.com/mikpinky/BetterTrayIcons/commit/4a9fcf6a58349846655c58712ffca4c2bf921689))
+* read interface xml asynchronously and drop the legacy migrations ([c4b0667](https://github.com/mikpinky/BetterTrayIcons/commit/c4b06679d205b65550533c242f2c4bdf8d228cc1))
+* **schema:** reject out-of-range values instead of storing them ([ed36840](https://github.com/mikpinky/BetterTrayIcons/commit/ed368406ac797aba2699cb0ab3c3af1a742b4ce6))
+* **sni:** raise the app's window on activate, across workspaces ([2be7ae6](https://github.com/mikpinky/BetterTrayIcons/commit/2be7ae6d2590a6e34a98207879ae37c2b2325763))
+* **style:** drop inline styles from tray icons in stock mode ([#61](https://github.com/mikpinky/BetterTrayIcons/issues/61)) ([38a909b](https://github.com/mikpinky/BetterTrayIcons/commit/38a909b1928dacabf9fab014deaecd60da2a9363))
+* **style:** keep stock icons styled and readable inside the popup ([5570c59](https://github.com/mikpinky/BetterTrayIcons/commit/5570c594c4ec4f8cf38d69aa15f75cebe673409a))
+* **sync:** keep the settings import off the shell main loop ([1a980b5](https://github.com/mikpinky/BetterTrayIcons/commit/1a980b58297cc783c0d6fa3d2a20b9243d3ccfd3))
+* **toggle:** keep the open menu first for the hover switch ([a1076e6](https://github.com/mikpinky/BetterTrayIcons/commit/a1076e6cb8301cece97732c393dee070dee100fe))
+* **tray:** cancel in-flight SNI registrations when their owner dies ([b553039](https://github.com/mikpinky/BetterTrayIcons/commit/b553039376d82aaeb900b3d789abf864bb4bef86)), closes [#14](https://github.com/mikpinky/BetterTrayIcons/issues/14)
+* **tray:** expand context menu submenus on click ([79b2d63](https://github.com/mikpinky/BetterTrayIcons/commit/79b2d6374a58b4356a9f5102408241e544fb7d6d)), closes [#11](https://github.com/mikpinky/BetterTrayIcons/issues/11)
+* **tray:** identify Wine tray icons by launcher and prefix ([8ba83ae](https://github.com/mikpinky/BetterTrayIcons/commit/8ba83ae3d82a542ac7be917365190abeecbf5301))
+* **tray:** keep auto-hide panels visible while a context menu is open ([0b43f1d](https://github.com/mikpinky/BetterTrayIcons/commit/0b43f1dba7fd2b04000f513a5184bc5be2527419))
+* **tray:** keep the context menu alive when the panel auto-hides ([62ab18a](https://github.com/mikpinky/BetterTrayIcons/commit/62ab18af2665e79d149743b2a1a04d75a1fba2b3)), closes [#33](https://github.com/mikpinky/BetterTrayIcons/issues/33) [#34](https://github.com/mikpinky/BetterTrayIcons/issues/34)
+* **tray:** multi-color status icons and the unread badge ([4046722](https://github.com/mikpinky/BetterTrayIcons/commit/404672286801f3377f8c28c63026c779ee608a46)), closes [#33](https://github.com/mikpinky/BetterTrayIcons/issues/33) [#35](https://github.com/mikpinky/BetterTrayIcons/issues/35)
+* **tray:** parse the xembed background color with cogl ([c0fd41c](https://github.com/mikpinky/BetterTrayIcons/commit/c0fd41c881fdd028b9caf7ac07a2d20fe5fd36e5))
+
+
+### Performance Improvements
+
+* generate the dbusmenu proxy class once per process ([9afa291](https://github.com/mikpinky/BetterTrayIcons/commit/9afa2914e8e45f4be170c29e1578a5a68c11b221))
+* **prefs:** batch factory reset and import into one transaction ([60bfb59](https://github.com/mikpinky/BetterTrayIcons/commit/60bfb5922631c49c19b15cf2092813853d84b090))
+* **prefs:** cache the system icon list across picker opens ([15686f0](https://github.com/mikpinky/BetterTrayIcons/commit/15686f0def91c4a60fcc4acf7274c59661b6d859))
+* **prefs:** coalesce applications page rebuilds ([6c8fb3d](https://github.com/mikpinky/BetterTrayIcons/commit/6c8fb3d6bfc6a223a9e54de222f1b412376249a9))
+* **prefs:** defer about page artwork until the page is shown ([16fca87](https://github.com/mikpinky/BetterTrayIcons/commit/16fca8793b3f7a40e8dcc8d87b22b8e7d4e71267))
+* **prefs:** stop the sync dialog from stat-storming on keystrokes ([1177d86](https://github.com/mikpinky/BetterTrayIcons/commit/1177d8653125d4832329330b5376d27ecd79837f))
+* **sync:** make backup rotation and writes fully async ([1a288d8](https://github.com/mikpinky/BetterTrayIcons/commit/1a288d87c154f8fa58884a55671cf30fb91194bc))
+* **tray:** skip icon refetches for unrelated settings changes ([3286e25](https://github.com/mikpinky/BetterTrayIcons/commit/3286e253c4265e0386d0976b26272dc3545cf46c))
+* **tray:** trim d-bus traffic per icon update ([af8ae48](https://github.com/mikpinky/BetterTrayIcons/commit/af8ae488569caae6000d4042ca719b91ef425d8b))
+* **tray:** write reorders as a single app-configs update ([991ffce](https://github.com/mikpinky/BetterTrayIcons/commit/991ffcef1279dfe86369bab6b667d8630bb0accf))
+
+
+### Translations
+
+* add Italian translation ([#41](https://github.com/mikpinky/BetterTrayIcons/issues/41)) ([1b32db6](https://github.com/mikpinky/BetterTrayIcons/commit/1b32db64b3cbd587d446f234e111c9b686140443))
+* Add Simplified Chinese translation ([#59](https://github.com/mikpinky/BetterTrayIcons/issues/59)) ([3ff3e33](https://github.com/mikpinky/BetterTrayIcons/commit/3ff3e33afa7d0a55f235a01467a5e99201117d45)), closes [#58](https://github.com/mikpinky/BetterTrayIcons/issues/58)
+* **de:** translate the toggle icon, color set and proxy strings ([2742168](https://github.com/mikpinky/BetterTrayIcons/commit/2742168e7838fddfcd854e23262e55acd284a7c5))
+* German translation for the new strings ([c1b37b6](https://github.com/mikpinky/BetterTrayIcons/commit/c1b37b65a47da2479905d579af155f97edb8414c))
+* Small Russian translation update ([184ea81](https://github.com/mikpinky/BetterTrayIcons/commit/184ea818a10dd7958c0619586eabe436e0ea81dc))
+* Update Russian translation ([#28](https://github.com/mikpinky/BetterTrayIcons/issues/28)) ([374be54](https://github.com/mikpinky/BetterTrayIcons/commit/374be54141052fb94cc56345051b7dbaec32faf4))
+* Update Russian translation ([#39](https://github.com/mikpinky/BetterTrayIcons/issues/39)) ([66a2707](https://github.com/mikpinky/BetterTrayIcons/commit/66a2707c582422478a96dabeda05720e9fe09c4e))
+* Update Russian translation ([#46](https://github.com/mikpinky/BetterTrayIcons/issues/46)) ([a93cb95](https://github.com/mikpinky/BetterTrayIcons/commit/a93cb95f280f1d594128a70a5e866913e838f017))
+* Update Russian translation ([#66](https://github.com/mikpinky/BetterTrayIcons/issues/66)) ([2c92869](https://github.com/mikpinky/BetterTrayIcons/commit/2c92869b93af646fe3fa45178690597f64ca9906))
+* Uptade Russian translation ([#52](https://github.com/mikpinky/BetterTrayIcons/issues/52)) ([333236d](https://github.com/mikpinky/BetterTrayIcons/commit/333236d863f30c9a1ff9abbcba18bafe695f4098))
+
 ## [3.3.3](https://github.com/nexaknight/BetterTrayIcons/compare/v3.3.2...v3.3.3) (2026-10-15)
 
 
