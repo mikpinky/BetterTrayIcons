@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: BetterTrayIcons\n"
 "Report-Msgid-Bugs-To: https://github.com/nexaknight/BetterTrayIcons/issues\n"
 "POT-Creation-Date: 2026-05-11 10:26+0200\n"
-"PO-Revision-Date: 2026-07-30 14:00+0200\n"
+"PO-Revision-Date: 2026-10-15 16:00+0200\n"
 "Last-Translator: Michele Pinchiarul <mikwii2000@gmail.com>\n"
 "Language-Team: Italian\n"
 "Language: it\n"
@@ -34,7 +34,7 @@ msgid "Add a state"
 msgstr "Aggiungi uno stato"
 
 msgid "Adds a tray icon for windowless background apps that lack one of their own."
-msgstr "Aggiunge un'icona nel tray alle app in background senza finestra che non ne hanno una propria."
+msgstr "Aggiunge un'icona nella tray per le app in background senza finestra che non ne hanno una propria."
 
 msgid "Advanced"
 msgstr "Avanzate"
@@ -82,7 +82,7 @@ msgid "Background App"
 msgstr "App in background"
 
 msgid "Create Tray Icons for Background Apps"
-msgstr "Crea icone nel tray per le app in background"
+msgstr "Crea icone nella tray per le app in background"
 
 msgid "Background Apps"
 msgstr "App in background"
@@ -107,6 +107,18 @@ msgstr "Backup"
 
 msgid "Behavior"
 msgstr "Comportamento"
+
+msgid "Border"
+msgstr "Bordo"
+
+msgid "Border Color"
+msgstr "Colore del bordo"
+
+msgid "Border Width (px)"
+msgstr "Spessore del bordo (px)"
+
+msgid "Border width"
+msgstr "Spessore del bordo"
 
 msgid "Bottom"
 msgstr "Basso"
@@ -147,9 +159,6 @@ msgstr "Configura"
 msgid "Configure advanced actions"
 msgstr "Configura le azioni avanzate"
 
-msgid "Confirm"
-msgstr "Conferma"
-
 msgid "Contacts api.github.com on demand."
 msgstr "Contatta api.github.com su richiesta."
 
@@ -158,6 +167,9 @@ msgstr "Collaboratori"
 
 msgid "Corner Radius (px)"
 msgstr "Raggio degli angoli (px)"
+
+msgid "Corner radius"
+msgstr "Raggio degli angoli"
 
 msgid "Custom"
 msgstr "Personalizzata"
@@ -187,7 +199,7 @@ msgid "Detected Apps"
 msgstr "App rilevate"
 
 msgid "Don’t show this icon in the tray."
-msgstr "Non mostrare questa icona nel tray."
+msgstr "Non mostrare questa icona nella tray."
 
 msgid "Double Tap"
 msgstr "Doppio tocco"
@@ -219,9 +231,6 @@ msgstr "Impossibile caricare il changelog: "
 msgid "File"
 msgstr "File"
 
-msgid "File Chooser"
-msgstr "Selettore di file"
-
 msgid "File is not valid JSON"
 msgstr "Il file non è in formato JSON valido"
 
@@ -233,6 +242,15 @@ msgstr "Dimentica"
 
 msgid "Forget App"
 msgstr "Dimentica l'app"
+
+msgid "Forward to the App"
+msgstr "Inoltra all'app"
+
+msgid "Stay Open When a Click Has No Effect"
+msgstr "Mantiene aperto se il clic non ha effetto"
+
+msgid "Some apps never answer a click."
+msgstr "Alcune app non rispondono al clic."
 
 msgid "from"
 msgstr "da"
@@ -282,6 +300,9 @@ msgstr "Icona, posizione, colori"
 msgid "Icon Size (px)"
 msgstr "Dimensione delle icone (px)"
 
+msgid "Icon size"
+msgstr "Dimensione delle icone"
+
 msgid "Icons"
 msgstr "Icone"
 
@@ -304,7 +325,7 @@ msgid "Information"
 msgstr "Informazioni"
 
 msgid "Inherit Style from Tray Icons"
-msgstr "Eredita lo stile dalle icone del tray"
+msgstr "Eredita lo stile dalle icone della tray"
 
 msgid "Keep Overflow Menu Open"
 msgstr "Mantieni aperto il menu di overflow"
@@ -327,8 +348,8 @@ msgstr "Note legali"
 msgid "License"
 msgstr "Licenza"
 
-msgid "Live Preview"
-msgstr "Anteprima in tempo reale"
+msgid "Preview"
+msgstr "Anteprima"
 
 msgid "Load"
 msgstr "Carica"
@@ -358,7 +379,7 @@ msgid "Margin"
 msgstr "Margine"
 
 msgid "Match the look of tray icons. Hides the controls below."
-msgstr "Riprende l'aspetto delle icone del tray; nasconde i controlli sottostanti."
+msgstr "Riprende l'aspetto delle icone nella tray; nasconde i controlli sottostanti."
 
 msgid "Stays open after icon clicks and context menus alike."
 msgstr "Resta aperto sia dopo i clic sulle icone sia dopo i menu contestuali."
@@ -444,8 +465,8 @@ msgstr "Sostituisce l'icona per stati dell'app come attenzione o sincronizzazion
 msgid "Padding"
 msgstr "Spaziatura interna"
 
-msgid "Panel Box"
-msgstr "Area del pannello"
+msgid "Panel Applet"
+msgstr "Applet del pannello"
 
 msgid "Placement"
 msgstr "Posizionamento"
@@ -501,11 +522,14 @@ msgstr "Esci"
 msgid "Recent releases"
 msgstr "Versioni recenti"
 
+msgid "Running in the background"
+msgstr "In esecuzione in background"
+
 msgid "Recommended"
 msgstr "Consigliate"
 
 msgid "Relative to the tray icons."
-msgstr "Rispetto alle icone del tray."
+msgstr "Rispetto alle icone della tray."
 
 msgid "Remove"
 msgstr "Rimuovi"
@@ -553,16 +577,13 @@ msgid "Row"
 msgstr "Riga"
 
 msgid "Run an app with a tray icon to see it here."
-msgstr "Avviare un'app con un'icona nel tray per vederla qui."
+msgstr "Avviare un'app con un'icona nella tray per vederla qui."
 
 msgid "Save"
 msgstr "Salva"
 
 msgid "Save settings as JSON or load them back."
 msgstr "Salva le impostazioni come JSON o le ricarica."
-
-msgid "Schema key \"sync-file-path\" missing."
-msgstr "Chiave dello schema «sync-file-path» mancante."
 
 msgid "Scroll"
 msgstr "Scorrimento"
@@ -694,13 +715,16 @@ msgid "Translate"
 msgstr "Traduci"
 
 msgid "Tray Icon Clicks"
-msgstr "Clic sulle icone del tray"
+msgstr "Clic sulle icone della tray"
 
 msgid "Tray Icons"
-msgstr "Icone del tray"
+msgstr "Icone della tray"
+
+msgid "Tray icons"
+msgstr "Icone della tray"
 
 msgid "Tray icons are drawn by the app itself via XEmbed, so a custom icon cannot be applied."
-msgstr "Le icone del tray sono disegnate dall'app stessa tramite XEmbed, quindi non è possibile applicare un'icona personalizzata."
+msgstr "Le icone della tray sono disegnate dall'app stessa tramite XEmbed, quindi non è possibile applicare un'icona personalizzata."
 
 msgid "Try a different search term."
 msgstr "Provare con un altro termine di ricerca."
@@ -861,7 +885,7 @@ msgid "Shows the unread count when the app sends one."
 msgstr "Mostra il numero di elementi non letti se l'app lo invia."
 
 msgid "Status icons cannot work here: the app has no tray icon and never reports a status, its icon comes from its desktop entry."
-msgstr "Le icone di stato non possono funzionare qui: l'app non ha una propria icona nel tray e non segnala mai uno stato, la sua icona proviene dal file .desktop."
+msgstr "Le icone di stato non possono funzionare qui: l'app non ha una propria icona nella tray e non segnala mai uno stato, la sua icona proviene dal file .desktop."
 
 msgid "0 is square, high is round."
 msgstr "0 è squadrato, valori alti sono arrotondati."
@@ -883,3 +907,51 @@ msgstr "Stato di riposo aggiornato."
 
 msgid "Takes what the app shows right now as its calm look."
 msgstr "Usa come aspetto a riposo quello che l'app mostra in questo momento."
+
+msgid "One icon per overflow menu state."
+msgstr "Un'icona per ogni stato del menu di overflow."
+
+msgid "Menu Closed"
+msgstr "Menu chiuso"
+
+msgid "Menu Open"
+msgstr "Menu aperto"
+
+msgid "Rotate While Open"
+msgstr "Ruota a menu aperto"
+
+msgid "Turn the icon instead of swapping it for a second one."
+msgstr "Ruota l'icona invece di sostituirla con una seconda."
+
+msgid "Angle"
+msgstr "Angolo"
+
+msgid "Duration (ms)"
+msgstr "Durata (ms)"
+
+msgid "Animate Rotation"
+msgstr "Anima la rotazione"
+
+msgid "Off turns the icon in one jump."
+msgstr "Se disattivato, l'icona ruota di scatto."
+
+msgid "Reverse the turning direction"
+msgstr "Inverti il senso di rotazione"
+
+msgid "Color Set"
+msgstr "Set di colori"
+
+msgid "Dark"
+msgstr "Scuro"
+
+msgid "Light"
+msgstr "Chiaro"
+
+msgid "Separate colors for the light and dark style."
+msgstr "Colori separati per lo stile chiaro e quello scuro."
+
+msgid "Measure the padding while hovering the preview."
+msgstr "Misura la spaziatura interna passando il mouse sull'anteprima."
+
+msgid "Measure the margin while hovering the preview."
+msgstr "Misura il margine passando il mouse sull'anteprima."
